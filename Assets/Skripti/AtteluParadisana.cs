@@ -53,11 +53,13 @@ public class AtteluParadisana : MonoBehaviour {
 	}
 	public void mainitPlatumu(){
 		vertiba1 = slaideris1.GetComponent<Slider> ().value;
-		mainigaisAttels.GetComponent<RectTransform>().sizeDelta = new Vector2 (1F * vertiba1, vertiba2);
+		vertiba2 = slaideris2.GetComponent<Slider> ().value;
+		mainigaisAttels.GetComponent<RectTransform>().sizeDelta = new Vector2 (100F * vertiba1, 180F * vertiba2);
 	}
 	public void mainitGarumu(){
+	vertiba1 = slaideris1.GetComponent<Slider> ().value;
 	vertiba2 = slaideris2.GetComponent<Slider> ().value;
-		mainigaisAttels.GetComponent<RectTransform>().sizeDelta = new Vector2 (vertiba1, 1F * vertiba2);
+		mainigaisAttels.GetComponent<RectTransform>().sizeDelta = new Vector2 (100F * vertiba1, 180F * vertiba2);
 	}
 
 }
