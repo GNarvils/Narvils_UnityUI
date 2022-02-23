@@ -51,13 +51,13 @@ public class AtteluParadisana : MonoBehaviour {
 		Aksesuari3.SetActive(vertiba);
 		Aksesuari4.SetActive(vertiba);
 	}
-	//public void mainitPlatumu(){
-	//	vertiba1 = slaideris1.GetComponent<Slider> ().value;
-	//	mainigaisAttels.RectTransform.sizeDelta = new Vector2 (1F * vertiba1, vertiba2);
-	//}
-	//public void mainitGarumu(){
-	//	vertiba2 = slaideris2.GetComponent<Slider> ().value;
-	//	mainigaisAttels.RectTransform.sizeDelta = new Vector2 (vertiba1, 1F * vertiba2);
-	//}
+	public void mainitPlatumu(){
+		vertiba1 = slaideris1.GetComponent<Slider> ().value;
+		mainigaisAttels.GetComponent<RectTransform>().sizeDelta = new Vector2 (1F * vertiba1, vertiba2);
+	}
+	public void mainitGarumu(){
+	vertiba2 = slaideris2.GetComponent<Slider> ().value;
+		mainigaisAttels.GetComponent<RectTransform>().sizeDelta = new Vector2 (vertiba1, 1F * vertiba2);
+	}
 
 }
